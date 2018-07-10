@@ -46,6 +46,7 @@ const SimpleMediaCard = props => {
 
 SimpleMediaCard.propTypes = {
 	classes: PropTypes.object.isRequired,
+	item: PropTypes.object,
 };
 
 export default withStyles(styles)(SimpleMediaCard);

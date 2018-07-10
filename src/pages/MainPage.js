@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -8,7 +8,7 @@ import Dialog from 'components/Dialog/Dialog';
 import ImageGrid from 'components/Grid/ImageGrid';
 import Grid from '@material-ui/core/Grid';
 
-class MainPage extends Component {
+class MainPage extends PureComponent {
 	static propTypes = {
 		isLoading: PropTypes.bool,
 		data: PropTypes.array,

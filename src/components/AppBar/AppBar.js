@@ -21,7 +21,7 @@ const styles = {
   },
 };
 
-function ButtonAppBar(props) {
+const ButtonAppBar = (props) => {
   const { classes } = props;
   return (
     <div className={classes.root}>

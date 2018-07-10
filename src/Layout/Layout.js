@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
@@ -82,7 +82,7 @@ const styles = theme => ({
 	},
 });
 
-class Layout extends React.Component {
+class Layout extends PureComponent {
 	state = {
 		open: false,
 	};
@@ -170,6 +170,7 @@ class Layout extends React.Component {
 Layout.propTypes = {
 	classes: PropTypes.object.isRequired,
 	theme: PropTypes.object.isRequired,
+	loadApiData: PropTypes.func.isRequired,
 };
 const LayoutWithStyles = withStyles(styles, { withTheme: true })(Layout);
 export default connect(
